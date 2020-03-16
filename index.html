@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> my webpage </title>
+    <meta charset="utf-8">
+    <meta name="description" content="webpage, with buttons ">
+    <meta name="keywords" content="Mths,website">
+    <meta name="author" content="Ahmad-El-khawaldeh">
+    <meta name="viewport" content="width=device-width,intial-scale1.0">
+  </head>
+  <body>
+    <h1> javascript work </h1>
+    <button onclick="document.getElementById('myImage').src='./images/basket.jpg'">basketball</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='./images/soccer.jpg'">soccer</button>
+    
+    <p id="p1" onclick="myFunction1()">click me to change the text.</p>
+     <button onclick="myFunction5()">make text appear</button>
+    <p id="demo">Hello</p>
+    <script>
+      function myFunction5() {
+        document.getElementById("demo").style.display="block";
+      }
+    </script>  
+     <button onclick="myFunction2()">make text disappear</button>
+    <script>
+      function myFunction2() {
+        document.getElementById("demo").style.display= "none";
+      }
+        
+       function myFunction1() {
+       document.getElementById("p1").innerHTML = "second day of javascript";
+     }
+     
+    </script>
+    <button type="button" onclick="backgroundColor()"> background color</button>
+    <script>
+     function backgroundColor() {
+       document.body.style.backgroundColor = "violet";
+     }
+    </script>
+
